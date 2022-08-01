@@ -1,0 +1,69 @@
+// !TYPOGRAHY
+
+// *Headers
+@mixin h1Mixin {
+	font-family: "Rubik", sans-serif;
+	font-size: 6.4rem;
+	text-transform: lowercase;
+}
+
+@mixin h2Mixin {
+	font-family: "Montserrat", sans-serif;
+	font-weight: medium;
+	font-size: 1.8rem;
+}
+
+@mixin h3Mixin {
+	font-family: "Rubik", sans-serif;
+	font-size: 5.5rem;
+	text-transform: lowercase;
+}
+
+@mixin h4Mixin {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	line-height: 150;
+	letter-spacing: -3;
+}
+
+@mixin h5Mixin {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 150;
+	letter-spacing: -3;
+}
+
+// *Body
+@mixin bodyMixin {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: -1;
+}
+
+// *Nav
+@mixin navMixin {
+	font-family: "Montserrat", sans-serif;
+	// TODO check if this works
+	font-weight: 600;
+	font-size: 1rem;
+	letter-spacing: 6;
+}
+
+// *Form
+@mixin formMixin {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+// *Button
+@mixin buttonMixin {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-transform: lowercase;
+}
