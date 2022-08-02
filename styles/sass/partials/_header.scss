@@ -1,9 +1,72 @@
 header {
+	color: $white;
+	background-color: $black;
+	// height: 40vh;
+	margin-bottom: 60vh;
+
+	// &::after {
+	// 	content: "";
+	// 	// height: 800px;
+	// 	width: 100vw;
+	// 	background-image: url(../portfolioDesign/images/header-bg.jpg);
+	// 	display: block;
+	// 	background-size: cover;
+	// 	height: 60vh;
+	// 	position: relative;
+	// 	z-index: 1;
+	// }
+
 	h1 {
 		@include h1Mixin;
+		margin-top: 1%;
+		margin-bottom: 0;
 	}
 
 	h2 {
-		font-family: $h2;
+		@include h2Mixin;
+		margin-bottom: 20%;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logoContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-left: 1%;
+	}
+
+	nav {
+		margin-right: 5%;
+		@include navMixin;
+
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row-reverse;
+		}
+
+		li {
+			margin-top: 5%;
+			margin-right: 3%;
+		}
+
+		.button {
+			text-decoration: none;
+			color: $white;
+			padding: 15px;
+			// min-width: 80px;
+			transition: 500ms;
+
+			&:hover {
+				color: $black;
+				background-color: $white;
+				border-radius: 3px;
+			}
+		}
 	}
 }
