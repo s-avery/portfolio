@@ -1,0 +1,27 @@
+.about {
+	// background-color: $light;
+	display: flex;
+	flex-direction: column;
+
+	h3 {
+		text-align: center;
+	}
+
+	.aboutContainer {
+		display: flex;
+	}
+
+	.textContainer,
+	.imageContainer {
+		max-width: 40vw;
+		margin: auto;
+	}
+
+	.funFacts {
+		display: grid;
+		grid-template-columns: auto auto;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}

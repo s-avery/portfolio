@@ -1,29 +1,27 @@
 header {
-	color: $white;
-	background-color: $black;
+	// color: $white;
+	// background-color: $black;
 	// height: 40vh;
-	margin-bottom: 60vh;
+	// margin-bottom: 60vh;
 
-	// &::after {
-	// 	content: "";
-	// 	// height: 800px;
-	// 	width: 100vw;
-	// 	background-image: url(../portfolioDesign/images/header-bg.jpg);
-	// 	display: block;
-	// 	background-size: cover;
-	// 	height: 60vh;
-	// 	position: relative;
-	// 	z-index: 1;
-	// }
+	&::after {
+		content: "";
+		// height: 800px;
+		width: 100vw;
+		background-image: url(../portfolioDesign/images/header-bg.jpg);
+		display: block;
+		background-size: cover;
+		height: 60vh;
+		position: relative;
+		z-index: 1;
+	}
 
 	h1 {
-		@include h1Mixin;
 		margin-top: 1%;
 		margin-bottom: 0;
 	}
 
 	h2 {
-		@include h2Mixin;
 		margin-bottom: 20%;
 	}
 
@@ -60,13 +58,7 @@ header {
 			color: $white;
 			padding: 15px;
 			// min-width: 80px;
-			transition: 500ms;
-
-			&:hover {
-				color: $black;
-				background-color: $white;
-				border-radius: 3px;
-			}
+			// transition: 500ms;
 		}
 	}
 }

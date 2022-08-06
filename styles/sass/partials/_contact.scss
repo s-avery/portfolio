@@ -1,0 +1,39 @@
+.contact {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		h3 {
+			padding-bottom: 2%;
+		}
+
+		label {
+			display: block;
+			margin-top: 2%;
+			margin-bottom: 0.5%;
+			// text-align: left;
+		}
+
+		input,
+		textarea,
+		button {
+			width: 30%;
+			min-height: 50px;
+			min-width: 680px;
+		}
+
+		button {
+			background-color: $black;
+			color: $white;
+			border: 2px solid $white;
+			margin: 1.5%;
+			transition: 500ms;
+
+			&:hover {
+				color: $black;
+				background-color: $light;
+			}
+		}
+	}
+}

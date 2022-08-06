@@ -221,26 +221,105 @@ template {
   overflow: hidden;
 }
 
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 6.4rem;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 5.5rem;
+  text-transform: lowercase;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4%;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: -3;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: -3;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: -1;
+}
+
+.grey {
+  color: #474747;
+  font-size: inherit;
+}
+
+.lineBreak {
+  display: block;
+}
+
+form {
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 * {
   font-size: 20px;
 }
 
-header {
-  color: #FFFFFF;
+.lightBackground {
+  background-color: #eee7fd;
+}
+
+.darkBackground {
+  color: #ffffff;
   background-color: #000000;
-  margin-bottom: 60vh;
+}
+
+.hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-decoration: none;
+  border: 3px solid #000000;
+}
+.hover:hover, .hover:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+header::after {
+  content: "";
+  width: 100vw;
+  background-image: url(../portfolioDesign/images/header-bg.jpg);
+  display: block;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  z-index: 1;
 }
 header h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 6.4rem;
-  text-transform: lowercase;
   margin-top: 1%;
   margin-bottom: 0;
 }
 header h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: medium;
-  font-size: 1.8rem;
   margin-bottom: 20%;
 }
 header .wrapper {
@@ -289,13 +368,132 @@ header nav li {
 }
 header nav .button {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 15px;
+}
+
+footer {
+  background-color: #141414;
+  color: white;
+  height: 80px;
+  text-align: center;
+}
+footer p {
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about h3 {
+  text-align: center;
+}
+.about .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .textContainer,
+.about .imageContainer {
+  max-width: 40vw;
+  margin: auto;
+}
+.about .funFacts {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.skills {
+  text-align: center;
+}
+
+.projects .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.projects .projectExample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.projects .imageContainer,
+.projects .textContainer {
+  margin: 2%;
+}
+.projects a {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2% 5%;
+  margin-right: 4%;
+  display: inline-block;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.contact .wrapper h3 {
+  padding-bottom: 2%;
+}
+.contact .wrapper label {
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+.contact .wrapper input,
+.contact .wrapper textarea,
+.contact .wrapper button {
+  width: 30%;
+  min-height: 50px;
+  min-width: 680px;
+}
+.contact .wrapper button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  margin: 1.5%;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
-header nav .button:hover {
+.contact .wrapper button:hover {
   color: #000000;
-  background-color: #FFFFFF;
-  border-radius: 3px;
+  background-color: #eee7fd;
+}
+
+footer {
+  background-color: #141414;
+  color: white;
+  height: 80px;
+  text-align: center;
+}
+footer p {
+  margin: 0 auto;
+  padding-top: 2%;
 }

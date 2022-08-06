@@ -1,0 +1,27 @@
+.projects {
+	// background-color: $light;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+
+	.projectExample {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.imageContainer,
+	.textContainer {
+		margin: 2%;
+	}
+
+	a {
+		background-color: $black;
+		color: $white;
+		padding: 2% 5%;
+		margin-right: 4%;
+		display: inline-block;
+	}
+}
