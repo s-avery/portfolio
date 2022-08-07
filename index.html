@@ -13,11 +13,13 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+
 		<!-- *CSS -->
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 
 	<body>
+		<!-- !HEADER -->
 		<header class="darkBackground">
 			<div class="wrapper">
 				<div class="logoContainer">
@@ -37,11 +39,13 @@
 						</li>
 
 						<li>
-							<a class="button hover" href="#">Projects</a>
+							<a class="button hover" href="#projects"
+								>Projects</a
+							>
 						</li>
 
 						<li>
-							<a class="button hover" href="#">Contact</a>
+							<a class="button hover" href="#contact">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -50,6 +54,7 @@
 		</header>
 
 		<main>
+			<!-- !ABOUT -->
 			<section class="about lightBackground" id="about">
 				<h3>about me</h3>
 
@@ -85,7 +90,7 @@
 					</div>
 					<div class="imageContainer">
 						<img
-							src="./portfolioDesign/images/placeholder.png"
+							src="./portfolioDesign/images/me.jpg"
 							alt="A photo of Sadie Avery"
 						/>
 					</div>
@@ -122,26 +127,83 @@
 				<!-- TODO stretch goal decorative symbol -->
 			</section>
 
+			<!-- !SKILLS -->
 			<section class="skills darkBackground">
-				<h3>skills</h3>
+				<wrapper>
+					<h3>skills</h3>
+					<ul class="skills__skill-container">
+    <li>
+        <i class="fa-fw fa-brands fa-html5"></i>
+        <p>HTML5</p>
+    </li>
 
-				<div class="thingsIKnow">
-					<!-- TODO copy this from frances ngl -->
-				</div>
+    <li>
+        <i class="fa-fw fa-brands fa-css3-alt"></i>
+        <p>CSS3</p>
+    </li>
+
+    <li>
+        <i class="fa-fw fa-brands fa-sass"></i>
+        <p>Sass</p>
+    </li>
+
+    <li>
+        <i class="fa-fw fa-brands fa-square-js"></i>
+        <p>JavaScript</p>
+    </li>
+
+    <li>
+        <i class="fa-fw fa-brands fa-git"></i>
+        <p>Git</p>
+    </li>
+
+    <li>
+        <i class="fa-fw fa-brands fa-github"></i>
+        <p>GitHub</p>
+    </li>
+
+    <li>
+        <i class="fa-fw fa-brands fa-react"></i>
+        <p>React</p>
+    </li>
+
+    <li>
+        <svg width="81" height="109" viewBox="0 0 81 109" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.78682 71.3466L13.749 2.89432C13.9155 1.85123 14.747 1.02885 15.8136 0.852145C16.8803 0.675436 17.9433 1.18398 18.4534 2.11499L30.2395 23.5926L2.78682 71.3466ZM80.6291 87.958L70.1952 24.961C70.0376 24.0563 69.3758 23.3129 68.4797 23.0339C67.5836 22.755 66.6029 22.9871 65.9374 23.6356L0.126465 87.958L36.5413 107.883C38.828 109.129 41.6131 109.129 43.8998 107.883L80.6291 87.958ZM51.0381 32.9814L42.6042 17.315C42.1692 16.5083 41.312 16.0033 40.3778 16.0033C39.4436 16.0033 38.5863 16.5083 38.1514 17.315L1.12017 81.7479L51.0381 32.9814Z" fill="white"/>
+        </svg>
+        <p>Firebase</p>
+    </li>
+</ul>
+
+					</div>
+				</wrapper>
 			</section>
 
-			<section class="projects lightBackground">
+			<!-- !PROJECTS -->
+			<section class="projects lightBackground" id="projects">
 				<div class="wrapper">
 					<h3>projects</h3>
+
+					<!-- *PROJECT 1 -->
 					<div class="projectExample">
 						<div class="imageContainer">
 							<img
+								src="./portfolioDesign/images/project1.jpeg"
+								alt=""
+								class="imgOverlay"
+							/>
+
+							<img
 								src="./portfolioDesign/images/placeholder.png"
 								alt=""
+								class="imgHover"
 							/>
 						</div>
 						<div class="textContainer">
 							<h5>Project Title</h5>
+							<p class="darkBackground madeWith">
+								[HTML, CSS, JAVASCRIPT, REACT]
+							</p>
 							<p>
 								Lorem ipsum dolor sit amet consectetur,
 								adipisicing elit. Qui laudantium perferendis
@@ -155,15 +217,26 @@
 						</div>
 					</div>
 
+					<!-- *PROJECT 2 -->
 					<div class="projectExample">
 						<div class="imageContainer">
 							<img
+								src="./portfolioDesign/images/project2.jpeg"
+								alt=""
+								class="imgOverlay"
+							/>
+
+							<img
 								src="./portfolioDesign/images/placeholder.png"
 								alt=""
+								class="imgHover"
 							/>
 						</div>
 						<div class="textContainer">
 							<h5>Project Title</h5>
+							<p class="darkBackground madeWith">
+								[HTML, CSS, JAVASCRIPT, REACT]
+							</p>
 							<p>
 								Lorem ipsum dolor sit amet consectetur,
 								adipisicing elit. Qui laudantium perferendis
@@ -177,15 +250,26 @@
 						</div>
 					</div>
 
+					<!-- *PROJECT 3 -->
 					<div class="projectExample">
 						<div class="imageContainer">
 							<img
-								src="./portfolioDesign/images/placeholder.png"
+								src="./portfolioDesign/images/project3.jpeg"
 								alt=""
+								class="imgOverlay"
+							/>
+
+							<img
+								src="./portfolioDesign/images/ghibli.png"
+								alt=""
+								class="imgHover"
 							/>
 						</div>
 						<div class="textContainer">
-							<h5>Project Title</h5>
+							<h5>API Navigation: Ghibli Gathering</h5>
+							<p class="darkBackground madeWith">
+								[HTML, CSS, JAVASCRIPT]
+							</p>
 							<p>
 								Lorem ipsum dolor sit amet consectetur,
 								adipisicing elit. Qui laudantium perferendis
@@ -199,15 +283,25 @@
 						</div>
 					</div>
 
+					<!-- *PROJECT 4 -->
 					<div class="projectExample">
 						<div class="imageContainer">
 							<img
-								src="./portfolioDesign/images/placeholder.png"
+								src="./portfolioDesign/images/project4.jpeg"
 								alt=""
+								class="imgOverlay"
+							/>
+
+							<img
+								src="./portfolioDesign/images/captured.png"
+								alt=""
+								class="imgHover"
 							/>
 						</div>
+
 						<div class="textContainer">
-							<h5>Project Title</h5>
+							<h5>Full Website Design Conversion</h5>
+							<p class="darkBackground madeWith">[HTML, CSS]</p>
 							<p>
 								Lorem ipsum dolor sit amet consectetur,
 								adipisicing elit. Qui laudantium perferendis
@@ -225,7 +319,8 @@
 				</div>
 			</section>
 
-			<section class="contact darkBackground">
+			<!-- !CONTACT -->
+			<section class="contact darkBackground" id="contact">
 				<div class="wrapper">
 					<h3>get in touch</h3>
 					<p>
@@ -260,8 +355,13 @@
 			</section>
 		</main>
 
+		<!-- !FOOTER -->
 		<footer>
 			<p>built in 2022 by sadie avery</p>
 		</footer>
+
+		<!-- !JAVASCRIPT -->
+		<!-- *FontAwesome -->
+		<script src="https://kit.fontawesome.com/fa84358317.js" crossorigin="anonymous"></script>
 	</body>
 </html>

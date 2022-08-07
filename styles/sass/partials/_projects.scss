@@ -17,11 +17,66 @@
 		margin: 2%;
 	}
 
+	h5 {
+		margin: 2% auto;
+	}
+
+	// .imageContainer {
+	// 	width: 800px;
+	// 	height: 800px;
+	// }
+
+	.imageContainer {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+
+		min-width: 400px;
+		max-width: 400px;
+		height: 400px;
+
+		&:hover {
+			.imgOverlay {
+				transform: translatex(-410px);
+				// transition: transform 900ms ease-in-out;
+				// transition: 900ms ease-in-out;
+			}
+		}
+	}
+
+	img {
+		object-fit: cover;
+	}
+
+	.imgOverlay {
+		position: relative;
+		z-index: 20;
+		transition: transform 700ms ease-in-out;
+	}
+
+	.imgHover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		transition: 0;
+	}
+
+	p.madeWith {
+		padding: 1.5%;
+		text-align: center;
+		margin-top: 0;
+		max-width: 40%;
+		font-size: 0.9rem;
+	}
+
 	a {
 		background-color: $black;
 		color: $white;
 		padding: 2% 5%;
 		margin-right: 4%;
 		display: inline-block;
+
+		@include buttonMixin;
 	}
 }

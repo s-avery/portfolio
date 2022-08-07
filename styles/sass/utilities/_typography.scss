@@ -47,6 +47,13 @@ p {
 	letter-spacing: -1;
 }
 
+button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-transform: lowercase;
+}
+
 .grey {
 	color: $grey;
 	font-size: inherit;

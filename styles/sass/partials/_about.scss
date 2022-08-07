@@ -17,6 +17,10 @@
 		margin: auto;
 	}
 
+	img {
+		max-height: 600px;
+		border-radius: 100%;
+	}
 	.funFacts {
 		display: grid;
 		grid-template-columns: auto auto;

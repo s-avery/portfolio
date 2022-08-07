@@ -264,6 +264,13 @@ p {
   letter-spacing: -1;
 }
 
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
 .grey {
   color: #474747;
   font-size: inherit;
@@ -358,9 +365,9 @@ header nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 header nav li {
   margin-top: 5%;
@@ -405,6 +412,10 @@ footer p {
   max-width: 40vw;
   margin: auto;
 }
+.about img {
+  max-height: 600px;
+  border-radius: 100%;
+}
 .about .funFacts {
   display: grid;
   grid-template-columns: auto auto;
@@ -415,6 +426,9 @@ footer p {
 
 .skills {
   text-align: center;
+}
+.skills p {
+  margin: 0 auto;
 }
 
 .projects .wrapper {
@@ -441,12 +455,58 @@ footer p {
 .projects .textContainer {
   margin: 2%;
 }
+.projects h5 {
+  margin: 2% auto;
+}
+.projects .imageContainer {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 400px;
+  max-width: 400px;
+  height: 400px;
+}
+.projects .imageContainer:hover .imgOverlay {
+  -webkit-transform: translatex(-410px);
+          transform: translatex(-410px);
+}
+.projects img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects .imgOverlay {
+  position: relative;
+  z-index: 20;
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+}
+.projects .imgHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-transition: 0;
+  transition: 0;
+}
+.projects p.madeWith {
+  padding: 1.5%;
+  text-align: center;
+  margin-top: 0;
+  max-width: 40%;
+  font-size: 0.9rem;
+}
 .projects a {
   background-color: #000000;
   color: #ffffff;
   padding: 2% 5%;
   margin-right: 4%;
   display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: lowercase;
 }
 
 .contact .wrapper {
