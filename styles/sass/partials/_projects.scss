@@ -10,6 +10,18 @@
 	.projectExample {
 		display: flex;
 		flex-direction: row;
+		transition: 200ms;
+		border: 2px dashed transparent;
+
+		&:hover {
+			// border: 2px dashed $black;
+
+			.imgOverlay {
+				transform: translatex(-410px);
+				// transition: transform 900ms ease-in-out;
+				// transition: 900ms ease-in-out;
+			}
+		}
 	}
 
 	.imageContainer,
@@ -34,14 +46,6 @@
 		min-width: 400px;
 		max-width: 400px;
 		height: 400px;
-
-		&:hover {
-			.imgOverlay {
-				transform: translatex(-410px);
-				// transition: transform 900ms ease-in-out;
-				// transition: 900ms ease-in-out;
-			}
-		}
 	}
 
 	img {

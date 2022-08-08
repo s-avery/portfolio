@@ -1,5 +1,29 @@
 .skills {
-	text-align: center;
+	.wrapper {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skillsContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	ul {
+		display: flex;
+		text-align: center;
+		margin: 2% 20%;
+	}
+
+	li {
+		list-style: none;
+		margin: 5%;
+	}
+
+	i {
+		font-size: 109px;
+	}
 
 	p {
 		margin: 0 auto;
