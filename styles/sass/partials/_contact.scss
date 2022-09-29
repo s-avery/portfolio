@@ -30,7 +30,8 @@
 			margin: 1.5%;
 			transition: 500ms;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				color: $black;
 				background-color: $light;
 			}

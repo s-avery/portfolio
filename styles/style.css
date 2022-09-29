@@ -221,6 +221,39 @@ template {
   overflow: hidden;
 }
 
+@media (max-width: 1500px) {
+  .about img {
+    height: 400px;
+  }
+}
+@media (max-width: 1300px) {
+  header .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .wrapper h2 {
+    margin-bottom: 0;
+  }
+  header .wrapper nav {
+    margin: 0 1%;
+  }
+  .about .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about .aboutContainer .textContainer,
+.about .aboutContainer .imageContainer {
+    max-width: 80vw;
+  }
+  .about img {
+    display: 300px;
+    margin: 0 auto;
+  }
+}
 h1 {
   font-family: "Rubik", sans-serif;
   font-size: 6.4rem;
@@ -263,7 +296,8 @@ p {
   font-size: 1.2rem;
   letter-spacing: -1;
 }
-p strong {
+p strong,
+p em {
   font-size: 1.15rem;
 }
 
@@ -573,7 +607,7 @@ footer p {
   -webkit-transition: 500ms;
   transition: 500ms;
 }
-.contact .wrapper button:hover {
+.contact .wrapper button:hover, .contact .wrapper button:focus {
   color: #000000;
   background-color: #eee7fd;
 }

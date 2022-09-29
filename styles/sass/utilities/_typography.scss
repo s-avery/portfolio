@@ -1,7 +1,5 @@
 // !TYPOGRAHY
 
-// *Headers
-// @mixin h1Mixin {
 h1 {
 	font-family: "Rubik", sans-serif;
 	font-size: 6.4rem;
@@ -46,7 +44,8 @@ p {
 	font-size: 1.2rem;
 	letter-spacing: -1;
 
-	strong {
+	strong,
+	em {
 		font-size: 1.15rem;
 	}
 }

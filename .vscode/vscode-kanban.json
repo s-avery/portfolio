@@ -1,6 +1,102 @@
 {
-  "todo": [],
-  "in-progress": [],
+  "todo": [
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:40:08.524Z",
+      "id": "7",
+      "references": [],
+      "title": "add jquery to skills"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:05:56.477Z",
+      "id": "5",
+      "references": [],
+      "title": "attribute frances"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:39:58.681Z",
+      "id": "6",
+      "references": [],
+      "title": "attribute/link group project"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T17:03:08.661Z",
+      "description": {
+        "content": "----",
+        "mime": "text/markdown"
+      },
+      "id": "9",
+      "references": [],
+      "title": "favicon"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:04:50.379Z",
+      "id": "2",
+      "references": [],
+      "title": "format about body text line height"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:05:00.883Z",
+      "id": "3",
+      "references": [],
+      "title": "mb hover to see subtitle on projects"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:05:46.990Z",
+      "id": "4",
+      "references": [],
+      "title": "mobile projects animation?"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:04:26.166Z",
+      "id": "1",
+      "references": [],
+      "title": "reverse every other project"
+    },
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-08-08T16:40:19.651Z",
+      "id": "8",
+      "references": [],
+      "title": "smooth scroll on nav click"
+    }
+  ],
+  "in-progress": [
+    {
+      "assignedTo": {
+        "name": "s-avery"
+      },
+      "creation_time": "2022-09-29T18:00:35.346Z",
+      "id": "10",
+      "references": [],
+      "title": "responsive-ify"
+    }
+  ],
   "testing": [],
   "done": []
 }
