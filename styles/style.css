@@ -253,6 +253,47 @@ template {
     display: 300px;
     margin: 0 auto;
   }
+  .projects .projectExample {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .projects .projectExample .imageContainer {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .contact .wrapper input,
+.contact .wrapper textarea,
+.contact .wrapper button {
+    min-width: 80vw !important;
+  }
+}
+@media (max-width: 500px) {
+  header .wrapper h1 {
+    font-size: 3rem;
+  }
+  header .wrapper h2 {
+    margin-bottom: 6%;
+  }
+  header .wrapper nav {
+    display: none;
+  }
+  .about .funFacts {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills .skillsContainer {
+    grid-template-columns: 1fr 1fr !important;
+    margin: auto;
+    padding: 0;
+  }
 }
 h1 {
   font-family: "Rubik", sans-serif;

@@ -34,4 +34,56 @@
 			margin: 0 auto;
 		}
 	}
+
+	.projects {
+		.projectExample {
+			flex-direction: column !important;
+			// border: 1px solid $dark;
+
+			.imageContainer {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+// !800px
+@media (max-width: 800px) {
+	.contact .wrapper {
+		input,
+		textarea,
+		button {
+			min-width: 80vw !important;
+		}
+	}
+}
+
+// !500px
+@media (max-width: 500px) {
+	header .wrapper {
+		h1 {
+			font-size: 3rem;
+		}
+
+		h2 {
+			margin-bottom: 6%;
+		}
+
+		nav {
+			display: none;
+		}
+	}
+
+	.about .funFacts {
+		display: flex !important;
+		flex-direction: column;
+	}
+
+	.skills {
+		.skillsContainer {
+			grid-template-columns: 1fr 1fr !important;
+			margin: auto;
+			padding: 0;
+		}
+	}
 }
